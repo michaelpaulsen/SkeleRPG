@@ -104,6 +104,6 @@ int main()
         Tp1 = std::chrono::system_clock::now();
         s.writeScreen();
         frame++;
-        sd
+       
     }
 }
