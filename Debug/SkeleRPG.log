@@ -1,0 +1,4 @@
+﻿  SkeleRPG.cpp
+C:\Users\Michael Paulsen\Desktop\c++ projects\Skele_lib\utils\Utils.h(82,10): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Michael Paulsen\Desktop\c++ projects\Skele_lib\utils\Utils.h(33): warning C4715: 'Skele_lib::Utils::CharToInt': not all control paths return a value
+  SkeleRPG.vcxproj -> C:\Users\Michael Paulsen\Desktop\c++ projects\games\SkeleRPG\Debug\SkeleRPG.exe
