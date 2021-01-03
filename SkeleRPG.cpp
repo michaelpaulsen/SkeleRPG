@@ -18,7 +18,7 @@ int main()
             for (int x = 0; x < s.getScreenWidth(); x++) {
                 index = y * s.getScreenWidth() + x; /// calculate the index for the screen array and store it 
                 /* clear the screen
-                * this needs to happen or there would be streaking think ms solitaire 
+                * this needs to happen or there would be streaking (think ms solitaire) 
                 */
                 s.screen[index] = ' ';
                 if (x == player1.x) { 
@@ -53,7 +53,10 @@ int main()
         if (Skele_lib::Utils::GetKeyDown('A') || Skele_lib::Utils::GetKeyDown(VK_LEFT)) {
             player1.move(4);
         }
-        /*wrap around code */
+        /*
+        *wrap around code
+        * should be a function that takes a player and a screen
+        */
         if (player1.x <= 0) {
             player1.x = s.getScreenWidth() - 3;
         }
@@ -81,6 +84,7 @@ int main()
         /**reset the chrono time*/
         Tp1 = std::chrono::system_clock::now();
         s.writeScreen();
+        s.writeScreen(); // write to the screen buffer (the console)
         frame++;
        
     }
