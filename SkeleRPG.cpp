@@ -23,28 +23,6 @@ int main()
                 s.screen[index] = ' ';
                 if (x == player1.x) { 
                     if (y == player1.y) {
-                        switch (player1.dir) { 
-                            /*
-                            change what "sprite" is shown based off of what direction the player is facing
-                            should be a virtual function in the Skele_lib::RPG::Player class
-                            */
-                            case Skele_lib::RPG::Direction::North :{
-                                s.screen[index] = 0x31d;
-                                break;
-                            }
-                            case Skele_lib::RPG::Direction::East: {
-                                s.screen[index] = 0x319;
-                                break;
-                            }
-                            case Skele_lib::RPG::Direction::South: {
-                                s.screen[index] = 0x31e;
-                                break; 
-                            }
-                            case Skele_lib::RPG::Direction::West: {
-                                s.screen[index] =0x31f;
-                                break; 
-                            }
-                        }
                     }
                 }
             }
