@@ -72,8 +72,8 @@ int main()
         * should be a member of the screen Skele_lib::CustomWinAPI::screen::Screen class 
         */
         Tp2 = std::chrono::system_clock::now();
-        std::chrono::duration<float> difference = Tp2 - Tp1;
-        while (difference.count() < (float)1.0 / fps)
+        std::chrono::duration<double> difference = Tp2 - Tp1;
+        while (difference.count() < (double)1.0 / fps)
         {
             Tp2 = std::chrono::system_clock::now();
             difference = Tp2 - Tp1;
